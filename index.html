@@ -15,80 +15,82 @@
 
 body{
     font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    color:#333;
+    background:#ffffff;
+    color:#111;
+    line-height:1.8;
 }
 
 /* ヘッダー */
 header{
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
-    color:white;
+    background:#111;
+    color:#fff;
     text-align:center;
     padding:80px 20px;
 }
 
 header h1{
-    font-size:48px;
+    font-size:42px;
     margin-bottom:10px;
 }
 
 header p{
     font-size:18px;
+    color:#d1d1d1;
 }
 
-/* コンテンツ */
+/* 全体 */
 .container{
     width:90%;
-    max-width:1000px;
-    margin:40px auto;
+    max-width:900px;
+    margin:50px auto;
 }
 
 /* カード */
 .card{
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    margin-bottom:30px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
-
-/* 写真 */
-.profile-image{
-    width:250px;
-    border-radius:20px;
-    display:block;
-    margin:20px auto;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:35px;
+    margin-bottom:25px;
+    background:#fff;
 }
 
 /* 見出し */
 h2{
-    text-align:center;
     margin-bottom:20px;
-    color:#2563eb;
+    border-bottom:2px solid #111;
+    display:inline-block;
+    padding-bottom:5px;
 }
 
-/* 趣味欄 */
+/* 写真 */
+.profile-image{
+    width:260px;
+    display:block;
+    margin:25px auto;
+    border-radius:10px;
+    border:2px solid #111;
+}
+
+/* 趣味 */
 .hobby-list{
     display:flex;
-    justify-content:center;
-    gap:15px;
     flex-wrap:wrap;
+    gap:10px;
 }
 
 .hobby{
-    background:#2563eb;
-    color:white;
-    padding:12px 20px;
-    border-radius:30px;
+    border:1px solid #111;
+    padding:10px 18px;
+    border-radius:20px;
 }
 
 /* フッター */
 footer{
-    background:#111827;
-    color:white;
+    background:#111;
+    color:#fff;
     text-align:center;
     padding:20px;
-    margin-top:40px;
+    margin-top:50px;
 }
 </style>
 </head>
@@ -97,7 +99,7 @@ footer{
 
 <header>
     <h1>〇〇のホームページ</h1>
-    <p>大学の課題で作成した自己紹介サイト</p>
+    <p>大学課題用サイト</p>
 </header>
 
 <div class="container">
@@ -105,13 +107,13 @@ footer{
     <div class="card">
         <h2>自己紹介</h2>
 
-        <!-- 後で写真入れる -->
+        <!-- 後で画像入れる -->
         <img src="photo.jpg" alt="プロフィール画像" class="profile-image">
 
-        <p style="text-align:center;">
+        <p>
             はじめまして。〇〇です。<br>
-            大学で学びながら、趣味も楽しんでいます。<br>
-            このサイトでは簡単な自己紹介をまとめています。
+            大学で学びながら、日々新しいことに挑戦しています。<br>
+            このサイトでは簡単な自己紹介をしています。
         </p>
     </div>
 
@@ -120,16 +122,16 @@ footer{
 
         <div class="hobby-list">
             <div class="hobby">アコースティックギター</div>
-            <div class="hobby">小説を読む</div>
+            <div class="hobby">小説を読むこと</div>
             <div class="hobby">音楽鑑賞</div>
         </div>
     </div>
 
     <div class="card">
-        <h2>ひとこと</h2>
+        <h2>メッセージ</h2>
 
-        <p style="text-align:center;">
-            まだ勉強中ですが、少しずつ新しいことに挑戦しています。
+        <p>
+            まだ勉強中ですが、少しずつ知識を身につけながら頑張っています。
         </p>
     </div>
 
