@@ -1,89 +1,142 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介ホームページ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+<title>My Homepage</title>
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
 
-        section {
-            background: white;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
+/* ヘッダー */
+header{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
 
-        h2 {
-            color: #333;
-        }
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
 
-        footer {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 15px;
-        }
-    </style>
+header p{
+    font-size:18px;
+}
+
+/* コンテンツ */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+/* カード */
+.card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* 写真 */
+.profile-image{
+    width:250px;
+    border-radius:20px;
+    display:block;
+    margin:20px auto;
+}
+
+/* 見出し */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+/* 趣味欄 */
+.hobby-list{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hobby{
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+}
+
+/* フッター */
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>ホームページ</h1>
-    <p>大学生の自己紹介サイト</p>
+    <h1>〇〇のホームページ</h1>
+    <p>大学の課題で作成した自己紹介サイト</p>
 </header>
 
 <div class="container">
 
-    <section>
+    <div class="card">
         <h2>自己紹介</h2>
-        <p>こんにちは。獨協大学経済学部経済学科の三溝遼大です。</p>
-    </section>
 
-    <section>
+        <!-- 後で写真入れる -->
+        <img src="photo.jpg" alt="プロフィール画像" class="profile-image">
+
+        <p style="text-align:center;">
+            はじめまして。〇〇です。<br>
+            大学で学びながら、趣味も楽しんでいます。<br>
+            このサイトでは簡単な自己紹介をまとめています。
+        </p>
+    </div>
+
+    <div class="card">
         <h2>趣味</h2>
-        <ul>
-            <li>音楽を聴くこと</li>
-            <li>ギターを弾くこと</li>
-            <li>アニメ、ドラマを見ること</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>大学で学んでいること</h2>
-        <p>教育、経済などについて学んでいます。</p>
-    </section>
+        <div class="hobby-list">
+            <div class="hobby">アコースティックギター</div>
+            <div class="hobby">小説を読む</div>
+            <div class="hobby">音楽鑑賞</div>
+        </div>
+    </div>
 
-    <section>
-        <h2>今後の目標</h2>
-        <p>就活で行きたい業界にいく。</p>
-        <p>さっさと内定もらうこと</p>
-    </section>
+    <div class="card">
+        <h2>ひとこと</h2>
+
+        <p style="text-align:center;">
+            まだ勉強中ですが、少しずつ新しいことに挑戦しています。
+        </p>
+    </div>
 
 </div>
 
 <footer>
-    <p>© 2026 My Website</p>
+    © 2026 My Homepage
 </footer>
 
 </body>
